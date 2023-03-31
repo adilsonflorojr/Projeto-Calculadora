@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div id="container">
+		<div id="inner">
+			<div id="first"><p id="show"></p></div>
+			<div id="result">	
+				<div id="second"> <p id="final"></p></div>
+			</div>
+			
+			<div id="buttons">
+				<button type="button" id="button_ce">CE</button>
+				<button type="button" onclick="erase()"	id="erasebutton">C</button>
+				<button type="button" id="random" ></button>
+				<button type="button" onclick="calculate('/')"	id="button_d">/</button>
+				<button type="button" onclick="calculate('7')">7</button>
+				<button type="button" onclick="calculate('8')">8</button>
+				<button type="button" onclick="calculate('9')">9</button>
+				<button type="button" onclick="calculate('*')" id="button_multi" >X</button>
+				<button type="button" onclick="calculate('4')">4</button>
+				<button type="button" onclick="calculate('5')">5</button>
+				<button type="button" onclick="calculate('6')">6</button>
+				<button type="button" onclick="calculate('-')" id="button_subt">-</button>
+				<button type="button" onclick="calculate('1')">1</button>
+				<button type="button" onclick="calculate('2')">2</button>
+				<button type="button" onclick="calculate('3')">3</button>
+				<button type="button" onclick="calculate('+')" id="button_ad">+</button>
+				<button type="button"></button>
+				<button type="button" onclick="calculate('0')">0</button>
+				<button type="button" onclick="calculate('.')">.</button>
+				<button type="button" onclick="resultado()" id="button_eq" >=  </button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		
+	
+		function calculate(value){
+			document.getElementById('show').innerHTML += value;
+		}
+	
+		document.getElementById('button_ce').addEventListener("click", ()=>{ 
+			document.getElementById('show').innerText = "";
+			document.getElementById('final').innerHTML = "";
+		
+		})
+
+		function resultado(){
+			document.getElementById('final').innerHTML = eval(document.getElementById('show').innerHTML)
+		}
+		function erase(){
+			 var erase_n = document.getElementById('show').innerHTML 
+			 document.getElementById('show').innerHTML = erase_n.substring(0,erase_n.length -1);
+		}
+
+	</script>
+
+</body>
+</html>

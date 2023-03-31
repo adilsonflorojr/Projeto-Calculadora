@@ -1,0 +1,149 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+body{
+	background-color: #000000bd;
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#container{
+	background-color: #645dab;
+	box-shadow: 5px 5px 5px black;
+	width: 15vw;
+	border-radius: 12%;
+	border: 2px solid black;
+}
+
+#inner{
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border-radius: 15%;
+	margin-left: 6%;
+}
+#first{
+	text-align: right;
+	height: 3em;
+	color: white;
+	background-color: transparent;
+	margin-right: 7%;
+	margin-top: 10%;
+	
+}
+#second{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-bottom: 5%;
+	height: 4em;
+	margin-right: 7%;
+	align-items: center;
+}
+
+#result{
+	height: 4em;
+}
+#buttons{
+	background-color: transparent;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+button{
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px black;
+	color: white;
+	padding: 30%;
+	background-color: #00000438;
+	height: 30%;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+
+}
+button:hover{
+	cursor: pointer;
+	box-shadow: 2px 2px 2px black;
+}
+#button_ce{
+	background-color: #3110898c;
+	color: white;
+	padding: 35%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px black;
+	height: 30%;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+}
+#button_ce:hover{
+	cursor: pointer;
+	box-shadow: 2px 2px 2px black;
+}
+#button_d,#button_multi,#button_subt,#button_ad, #erasebutton, #random{
+	background-color: #3110898c;
+	color: white;
+	padding: 35%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px black;
+	height: 30%;
+	width: 30%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	
+}
+#button_d:hover,#button_multi:hover,#buttonsubt:hover,#button_ad:hover,  #erasebutton:hover, #random:hover{
+	cursor: pointer;
+	box-shadow: 2px 2px 2px black;
+}
+#button_eq{
+	background-color: #3110898c;
+	color: white;
+	padding: 35%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px black;
+	height: 30%;
+	width: 30%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
+#button_eq:hover{
+	box-shadow: 2px 2px 2px black;
+	cursor: pointer;
+}
+#show{
+	color: white;
+	text-align: right;
+}
+#final{
+	color: white;
+	text-align: right;
+	font-size: 30px;
+}
+@media (max-width: 1200px){
+
+	#container{
+		width: 50vw;
+	}
+}
